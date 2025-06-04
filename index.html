@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">    
+                <img class="header-img" src="images/header.png" alt="Jimmy's diner banner with a burger">
+            </div>
+        </header>
+        <main>            
+            <section class="items">
+                <div class="container" id="items-column">
+                    <!-- items go here -->
+                </div>
+            </section>
+            
+            <section>
+                <div class="container">
+                    <div class="cart" id="cart">                        
+                        <h3>Your order</h3>
+                        <div class="cart-items" id="cart-items">
+                            <!-- items rendered here -->
+                        </div>
+                        <div class="cart-total">
+                            <h3>Total price:</h3>
+                            <p class="price" id="total-cart-price">$0</p>
+                        </div>
+                        <button class="complete-order submit-btn" id="complete-order">Complete order</button>
+                    </div>
+                </div>
+            </section>
+            <div class="payment-popup hidden" id="payment-popup">
+                <h2>Enter card details</h2>
+                <form>
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                    <input type="text" placeholder="Enter card number" id="card-number" required>
+                    <input type="text" placeholder="Enter CVV" id="cvv"v required>
+                    <button class="submit-btn" type="submit">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
