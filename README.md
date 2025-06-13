@@ -1,1 +1,1 @@
-Just another small project
+Just another small project.
